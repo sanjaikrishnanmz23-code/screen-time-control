@@ -601,7 +601,7 @@ function doRegister() {
   saveUsers();
   localStorage.setItem('sg_user', JSON.stringify({ name, email, provider:'email' }));
   toast(`Account created! Welcome, ${name.split(' ')[0]}!`, '🎉');
-  setTimeout(() => location.href = 'dashboard.html', 1500);
+  setTimeout(() => location.href = 'index.html', 1500);
 }
 
 // ── Forgot — Step 1: Send OTP ─────────────────────────────────────────────
